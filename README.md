@@ -3,23 +3,11 @@ International Business Men
 
 Trabajas para el GNB (Goliath National Bank), y tu jefe, Barney Stinson, te ha pedido que diseñes e implementes una aplicación backend para ayudar a los ejecutivos de la empresa que vuelan por todo el mundo. Los ejecutivos necesitan un listado de cada producto con el que GNB comercia, y el total de la suma de las ventas de estos productos.
 
-Para esta tarea debes crear un webservice. Este webservice puede devolver los resultados en formato XML o en JSON. Eres libre de escoger el formato con el que te sientas más cómodo (sólo es necesario que se implemente uno de los formatos).
+Para esta tarea debes crear un webservice. Este webservice debe devolver los resultados en formato JSON.
 
 Recursos a utilizar:
-
-XML
----
-
-<rates>
- <rate from="EUR" to="USD" rate="1.359"/>
- <rate from="CAD" to="EUR" rate="0.732"/>
- <rate from="USD" to="EUR" rate="0.736"/>
- <rate from="EUR" to="CAD" rate="1.366"/>
-</rates>
-
-JSON
-----
-
+--------------------
+JSON:
 [
  { "from": "EUR", "to": "USD", "rate": "1.359" },
  { "from": "CAD", "to": "EUR", "rate": "0.732" },
@@ -29,20 +17,7 @@ JSON
 
 Cada entrada en la colección especifica una conversión de una moneda a otra (cuando te devuelve una conversión, la conversión contraria también se devuelve), sin embargo hay algunas conversiones que no se devuelven, y en caso de ser necesarias, deberán ser calculadas utilizando las conversiones que se dispongan. Por ejemplo, en el ejemplo no se envía la conversión de USD a CAD, esta debe ser calculada usando la conversión USD a EUR y después EUR a CAD.
 
-XML
----
-
-<transactions>
- <transaction sku="T2006" amount="10.00" currency="USD"/>
- <transaction sku="M2007" amount="34.57" currency="CAD"/>
- <transaction sku="R2008" amount="17.95" currency="USD"/>
- <transaction sku="T2006" amount="7.63" currency="EUR"/>
- <transaction sku="B2009" amount="21.23" currency="USD"/>
-</transactions>
-
-JSON
-----
-
+JSON:
 [
  { "sku": "T2006", "amount": "10.00", "currency": "USD" },
  { "sku": "M2007", "amount": "34.57", "currency": "CAD" },
