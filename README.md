@@ -9,12 +9,14 @@ Recursos a utilizar:
 --------------------
 JSON:
 
+```json
 [
  { "from": "EUR", "to": "USD", "rate": "1.359" },
  { "from": "CAD", "to": "EUR", "rate": "0.732" },
  { "from": "USD", "to": "EUR", "rate": "0.736" },
  { "from": "EUR", "to": "CAD", "rate": "1.366" }
 ]
+```
 
 Cada entrada en la colección especifica una conversión de una moneda a otra (cuando te devuelve una conversión, la conversión contraria también se devuelve), sin embargo hay algunas conversiones que no se devuelven, y en caso de ser necesarias, deberán ser calculadas utilizando las conversiones que se dispongan. Por ejemplo, en el ejemplo no se envía la conversión de USD a CAD, esta debe ser calculada usando la conversión USD a EUR y después EUR a CAD.
 
