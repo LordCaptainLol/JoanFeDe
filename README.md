@@ -22,6 +22,7 @@ Cada entrada en la colección especifica una conversión de una moneda a otra (c
 
 JSON:
 
+```json
 [
  { "sku": "T2006", "amount": "10.00", "currency": "USD" },
  { "sku": "M2007", "amount": "34.57", "currency": "CAD" },
@@ -29,6 +30,7 @@ JSON:
  { "sku": "T2006", "amount": "7.63", "currency": "EUR" },
  { "sku": "B2009", "amount": "21.23", "currency": "USD" }
 ]
+```
 
 Cada entrada en la colección representa una transacción de un producto (el cual se identifica mediante el campo SKU), el valor de dicha transacción (amount) y la moneda utilizada (currency).
 
